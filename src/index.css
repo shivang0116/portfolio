@@ -1,13 +1,331 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Nunito', sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.App {
+  display: flex;
+}
+
+
+.main-container {
+  overflow-y: scroll;
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  width: 75vw;
+  color: white;
+}
+
+.intro-container,
+.about-container,.education-container,.contact-container {
+  /* padding: 1rem; */
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  width: 70%;
+  /* text-align: justify; */
+}
+
+.about,.education,.contact {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 85%;
+}
+
+.about-container,.education-container,.contact-container {
+  align-items: baseline;
+}
+
+.about-heading,.education-heading,.contact-heading {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-info,.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-left {
+  margin: 0 auto;
+  flex: 3;
+}
+.about-right {
+  /* margin: 0 auto; */
+  flex: 4;
+}
+
+.qualities {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.course {
+  display: flex;
+  justify-content: space-between;
+}
+
+.css,
+.javascript,
+.java,
+.html,
+.react,
+.cpp {
+  width: 100%;
+  height: 0.8rem;
+  background-color: white;
+  position: relative;
+}
+
+.css-percentage,
+.javascript-percentage,
+.java-percentage,
+.html-percentage,
+.react-percentage,
+.cpp-percentage {
+  position: absolute;
+  height: 100%;
+  background-color: yellow;
+}
+
+.css-percentage {
+  width: 85%;
+}
+
+.html-percentage {
+  width: 80%;
+}
+
+.java-percentage {
+  width: 90%;
+}
+
+.cpp-percentage {
+  width: 70%;
+}
+
+.react-percentage {
+  width: 80%;
+}
+
+.javascript-percentage {
+  width: 75%;
+}
+
+.education-school{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.edu-card{
+  padding: 0.5rem 1rem;
+  width: 15rem;
+  position: relative;
+}
+.graduation{
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 238, 15);
+  border-radius: 50%;
+  top: -8%;
+  left: -9%;
+}
+.graduation i{
+  color: white;
+  font-size: x-large;
+}
+
+span{
+  color: yellow;
+}
+.intro-button,.contact-button,.year,.nav-item{
+  background-color: rgb(80, 78, 78);
+  height: 2.5rem;
+  width: 9rem;
+  font-size: large;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.year{
+  width: 5rem;
+  font-size: small;
+  height: 1.8rem;
+}
+.intro-button a,.nav-item a{
+  text-decoration: none;
+  color: white;
+}
+.intro-button i,.contact-button i{
+  color: yellow;
+}
+
+.contact-left,.contact-right{
+  flex:1;
+}
+
+input,textarea{
+  background-color: rgb(49, 47, 47);
+  height: 3rem;
+  border: none;
+  width: 85%;
+  color: white;
+  font-size: large;
+}
+textarea{
+  height: 8rem;
+}
+.contact-button{
+  display: flex;
+  height: 2.8rem;
+  width: 11rem;
+}
+.icons{
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.icons i{
+  color: yellow;
+  font-size:xx-large;
+}
+
+.edu-card{
+  border-left: 2px solid white;
+  margin:1rem 0.2rem;
+}
+
+hr{
+  background-color: grey;
+  border-color:grey ;
+}
+
+.sidebar-container {
+  background-color: rgb(26, 25, 25);
+  height: 100vh;
+  width: 25vw;
+  overflow: auto;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation-name: navbar;
+  animation-duration: 4s;
+}
+
+.sidebar{
+  color: white;
+  height: auto;
+  width: 90%;
+}
+
+.nav{
+  width: 90%;
+}
+.nav-item{
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-image{
+  height: 10rem;
+  width: 10rem;
+  background-color: white; 
+  border-radius: 50%;
+  overflow: hidden; 
+  border: 0.3rem solid yellowgreen;
+}
+
+.sidebar-container img{
+  height: 100%;
+  width: 100%;
+}
+.sidebar div{
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.sidebar div a{
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger,.cross{
+  position: absolute;
+  color: white;
+  font-size: xx-large;
+  top: 2%;
+  right: 7%;
+  display: none;
+}
+.identity{
+  font-size: 1.2rem;
+}
+
+.color-blue{
+  color: blueviolet;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-info,.contact-info{
+    flex-direction: column;
+  }
+  .sidebar-container{
+    left: -25%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .main-container{
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .hamburger,.cross{
+    display: block;
+  }
+
+  .active{
+    left: 0%;
+    transition: 0.2s ease-in-out;
+    width: 45vw;
+  }
+}
+
+@media only screen and (max-width: 430px){
+  .active{
+    width: 100vw;
+  }
+  .identity{
+    font-size: 1rem;
+  }
 }
