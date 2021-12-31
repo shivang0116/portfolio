@@ -3,7 +3,6 @@ import EducationCard from './EducationCard';
 import {data} from './EducationData';
 class Education extends Component {
     render() {
-        console.log(data);
         return (
             <div id="edu" className='education-container'>
                 <div className='education'>

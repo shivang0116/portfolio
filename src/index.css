@@ -237,6 +237,7 @@ hr{
   justify-content: center;
   animation-name: navbar;
   animation-duration: 4s;
+  animation-direction: alternate;
 }
 
 .sidebar{
@@ -287,6 +288,14 @@ hr{
   right: 7%;
   display: none;
 }
+
+.hamburger{
+  position: fixed;
+  background-color: rgb(48, 46, 46);
+  padding: 0.2rem 0.5rem;
+  z-index: 3;
+}
+
 .identity{
   font-size: 1.2rem;
 }
@@ -328,4 +337,9 @@ hr{
   .identity{
     font-size: 1rem;
   }
+}
+
+.nav-item:hover,.intro-button:hover,.contact-button:hover{
+  background-color: yellowgreen;
+  transition: all 0.3s ease-in-out;
 }

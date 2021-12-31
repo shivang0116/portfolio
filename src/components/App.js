@@ -6,7 +6,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      sidebar: false
+      sidebar: false,
+      icon: false
     }
   }
 
@@ -19,8 +20,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <SideBar sidebar={this.state.sidebar} toggleSidebar={this.toggleSidebar}/>
-        <Main toggleSidebar={this.toggleSidebar}/>
+        <SideBar
+          sidebar={this.state.sidebar}
+          icon={this.state.icon}
+          toggleSidebar={this.toggleSidebar} />
+
+        <Main toggleSidebar={this.toggleSidebar} />
       </div>
     );
   }
