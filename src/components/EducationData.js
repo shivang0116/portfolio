@@ -2,12 +2,12 @@ export const data = [
     {
         "year": "2016 - 17",
         "school": "Secondary School",
-        "description": "I Passed My Secondary Education From Air Force School Hindan And Secured 9.6 CGPA. I Am Also Volunteer In Many Computer Programmes."
+        "description": "I Passed My Secondary Education From New Lahoria Senior Secondary School And Secured 9.2 CGPA. I Am Also Volunteer In Many Computer Programmes."
     },
     {
         "year": "2018 - 19",
         "school": "Higher Education",
-        "description": "I Secured 86.6% In New Lahoria Senior Secondary School."
+        "description": "I Secured 86.6% In Shree Ram Ideal School School."
     },
 
     {

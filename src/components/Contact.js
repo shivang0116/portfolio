@@ -18,8 +18,10 @@ class Contact extends Component {
                         </div>
                         <div className='contact-right'>
                             <h1>Get In Touch</h1>
+
                             <p>Whether you want to get in touch, talk about a project collaboration, or just say hi, I'd love to hear from you.
-                                Simply fill the from and send me an email.</p>
+                                Simply fill the form and send me an email.</p>
+
                             <div className='icons'>
                                 <i class="fab fa-instagram"></i>
                                 <i class="fab fa-facebook"></i>
